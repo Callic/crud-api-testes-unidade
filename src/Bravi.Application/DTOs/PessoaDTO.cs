@@ -17,8 +17,7 @@ namespace Bravi.Application.DTOs
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public string Nome { get; set; }
-
-        public IEnumerable<ContatoDTO?> Contatos { get; set; }
+        public IEnumerable<ContatoDTO>? Contatos { get; set; } = new List<ContatoDTO>();
 
 
     }

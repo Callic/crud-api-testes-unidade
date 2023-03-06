@@ -27,6 +27,7 @@ namespace Bravi.Infra.Repositories
         public void Dispose()
         {
             _context.Dispose();
+            GC.SuppressFinalize(this);
         }
 
         public void Excluir(int id)

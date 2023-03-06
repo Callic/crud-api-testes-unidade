@@ -1,7 +1,9 @@
 using Bravi.Application.DI;
 using Bravi.Application.Extensions;
 using Bravi.Application.Filters;
+using Bravi.Infra.Context;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -46,6 +48,10 @@ else
 }
 
 app.UseHttpsRedirection();
+
+
+app.ConfigureMigration();
+
 
 app.UseCors(x => x
             .AllowAnyOrigin()

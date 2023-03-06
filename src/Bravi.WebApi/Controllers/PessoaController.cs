@@ -5,6 +5,7 @@ using Bravi.Application.Services.Interfaces;
 using Bravi.Domain.Models;
 using Bravi.Infra.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System.Text;
 
 namespace Bravi.WebApi.Controllers
 {
